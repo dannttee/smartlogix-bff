@@ -1,7 +1,9 @@
 C:\Users\dante\Downloads\smartlogix-bff\src\main\java\com\smartlogix\bff\BffApplication.java
 C:\Users\dante\Downloads\smartlogix-bff\src\main\java\com\smartlogix\bff\dto\DetallePedidoDTO.java
 C:\Users\dante\Downloads\smartlogix-bff\src\main\java\com\smartlogix\bff\dto\ProductoDTO.java
+C:\Users\dante\Downloads\smartlogix-bff\src\main\java\com\smartlogix\bff\factory\DtoFactory.java
 C:\Users\dante\Downloads\smartlogix-bff\src\main\java\com\smartlogix\bff\controller\BffController.java
+C:\Users\dante\Downloads\smartlogix-bff\src\main\java\com\smartlogix\bff\config\AppConfig.java
 C:\Users\dante\Downloads\smartlogix-bff\src\main\java\com\smartlogix\bff\client\InventarioClient.java
 C:\Users\dante\Downloads\smartlogix-bff\src\main\java\com\smartlogix\bff\client\PedidosClient.java
 C:\Users\dante\Downloads\smartlogix-bff\src\main\java\com\smartlogix\bff\dto\PedidoDTO.java
