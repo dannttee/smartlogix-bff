@@ -30,4 +30,17 @@ public class PedidosClient {
         return restTemplate.getForObject(
             baseUrl + "/api/pedidos/" + id, PedidoDTO.class);
     }
+
+    public PedidoDTO crearPedido(PedidoDTO pedido) {
+        return restTemplate.postForObject(
+            baseUrl + "/api/pedidos", pedido, PedidoDTO.class);
+    }
+
+    public void actualizarPedido(Long id, PedidoDTO pedido) {
+        restTemplate.put(baseUrl + "/api/pedidos/" + id, pedido);
+    }
+
+    public void eliminarPedido(Long id) {
+        restTemplate.delete(baseUrl + "/api/pedidos/" + id);
+    }
 }

@@ -30,4 +30,17 @@ public class InventarioClient {
         return restTemplate.getForObject(
             baseUrl + "/api/productos/" + id, ProductoDTO.class);
     }
+
+    public ProductoDTO crearProducto(ProductoDTO producto) {
+        return restTemplate.postForObject(
+            baseUrl + "/api/productos", producto, ProductoDTO.class);
+    }
+
+    public void actualizarProducto(Long id, ProductoDTO producto) {
+        restTemplate.put(baseUrl + "/api/productos/" + id, producto);
+    }
+
+    public void eliminarProducto(Long id) {
+        restTemplate.delete(baseUrl + "/api/productos/" + id);
+    }
 }
