@@ -18,6 +18,6 @@ public class SwaggerConfig {
                 .description("Backend For Frontend - Capa de integración entre el frontend y los microservicios de SmartLogix")
                 .contact(new Contact()
                     .name("Dante Muñoz")
-                    .email("tu.email@duoc.cl")));
+                    .email("dant.munozf@duocuc.cl")));
     }
 }
