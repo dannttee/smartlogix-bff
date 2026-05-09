@@ -4,7 +4,6 @@ import com.smartlogix.bff.dto.PedidoDTO;
 import com.smartlogix.bff.dto.ProductoDTO;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 
 public class DtoFactory {
 
@@ -25,11 +24,23 @@ public class DtoFactory {
         return dto;
     }
 
-    public static PedidoDTO crearPedido(String estado) {
+    public static PedidoDTO crearPedido(
+            String clienteNombre,
+            Long productoId,
+            String productoNombre,
+            Integer cantidad,
+            Double precioUnitario,
+            String estado
+    ) {
         PedidoDTO dto = new PedidoDTO();
+        dto.setClienteNombre(clienteNombre);
+        dto.setProductoId(productoId);
+        dto.setProductoNombre(productoNombre);
+        dto.setCantidad(cantidad);
+        dto.setPrecioUnitario(precioUnitario);
+        dto.setTotal(cantidad * precioUnitario);
         dto.setEstado(estado);
-        dto.setFecha(LocalDateTime.now());
-        dto.setDetalles(new ArrayList<>());
+        dto.setFechaPedido(LocalDateTime.now());
         return dto;
     }
 }
