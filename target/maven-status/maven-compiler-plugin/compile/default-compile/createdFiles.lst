@@ -1,0 +1,10 @@
+com\smartlogix\bff\controller\BffController.class
+com\smartlogix\bff\BffApplication.class
+com\smartlogix\bff\client\PedidosClient.class
+com\smartlogix\bff\factory\DtoFactory.class
+com\smartlogix\bff\config\AppConfig.class
+com\smartlogix\bff\client\InventarioClient.class
+com\smartlogix\bff\config\SwaggerConfig.class
+com\smartlogix\bff\dto\ProductoDTO.class
+com\smartlogix\bff\dto\DetallePedidoDTO.class
+com\smartlogix\bff\dto\PedidoDTO.class
